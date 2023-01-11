@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+
 import style from "../Components/styles/login.module.scss"
 import GoogleIcon from "@mui/icons-material/Google"
 import Image from 'next/image'
@@ -12,12 +12,12 @@ const login = () => {
     }
 
    
-    useEffect(()=>{
-      const token = getCookie("token");
-      if(token){
-        window.open("http:localhost:3000/dashboard");
-      }
-    },[])
+    // useEffect(()=>{
+    //   const token = getCookie("token");
+    //   if(token){
+    //     window.open("http:localhost:3000/dashboard");
+    //   }
+    // },[])
 
 
     const handleOnGoogleSignup=()=>{
