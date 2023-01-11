@@ -3,7 +3,7 @@ import style from "../Components/styles/login.module.scss"
 import GoogleIcon from "@mui/icons-material/Google"
 import Image from 'next/image'
 import LoginIcon from '@mui/icons-material/Login';
-import { useRouter } from 'next/router';
+const {useRouter} = require("next/router")
 const {getCookie}  = require("cookies-next")
 
 const login = () => {
@@ -25,7 +25,7 @@ const login = () => {
       }
       
   return (
-    
+
     <div className={style.login}>
      <div className={style.loginWrapper}>
         <div className={style.left}>
