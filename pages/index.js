@@ -8,7 +8,7 @@ const {getCookie} = require("cookies-next");
 
 export default function Home() {
   const handleOnSignup=()=>{
-    window.open("http://localhost:3000/api/google");
+    window.open("https://kiitconnect.netlify.app/api/google");
   }
 
   // useEffect(()=>{

@@ -9,7 +9,7 @@ const { default: async } = require('../pages/oauth2/redirect/google');
 passport.use(new GoogleStrategy({
     clientID:'654893194221-e9ptiasj6skd0o4r8kdge07t3k352n91.apps.googleusercontent.com',
     clientSecret: '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',
-    callbackURL: 'http://localhost:3000/api/redirect',
+    callbackURL: 'https://kiitconnect.netlify.app/api/redirect',
     
 },async(accessToken,refreshToken,profile,done)=>{
     try {

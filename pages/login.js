@@ -21,7 +21,7 @@ const login = () => {
 
 
     const handleOnGoogleSignup=()=>{
-        window.open("http://localhost:3000/api/google","_self");
+        window.open("https://kiitconnect.netlify.app/api/google","_self");
       }
       
   return (
