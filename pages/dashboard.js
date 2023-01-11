@@ -2,16 +2,16 @@ import React from "react";
 import connectdb from "../Components/connectdb";
 import { getCookie, removeCookies } from "cookies-next";
 import Users from "../model/Users";
-import { useRouter } from "next/router";
+
 import Image from "next/image";
 // import { redirect } from 'next/dist/server/api-utils';
 const jwt = require("jsonwebtoken");
 
 const dashboard = ({ email,displayName,profilePic }) => {
-  const router = useRouter();
+  
   const handleOnLogout = () => {
     removeCookies("token");
-    router.replace("/");
+    window.open("/","_self");
   };
   const myLoader=({src})=>{
     return profilePic;

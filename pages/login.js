@@ -3,7 +3,7 @@ import style from "../Components/styles/login.module.scss"
 import GoogleIcon from "@mui/icons-material/Google"
 import Image from 'next/image'
 import LoginIcon from '@mui/icons-material/Login';
-const {useRouter} = require("next/router")
+
 const {getCookie}  = require("cookies-next")
 
 const login = () => {
@@ -11,11 +11,11 @@ const login = () => {
         console.log("Login");
     }
 
-    const router = useRouter();
+   
     useEffect(()=>{
       const token = getCookie("token");
       if(token){
-        router.replace("/dashboard");
+        window.open("http:localhost:3000/dashboard");
       }
     },[])
 
