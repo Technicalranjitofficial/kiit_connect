@@ -1,0 +1,221 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+
+    .loginWrapper{
+        width: 80%;
+        height: 80%;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+     
+
+        .left{
+         
+            width: 100%;
+            flex:1;
+            
+            padding: 20px;
+
+            .leftWrapper{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                p{
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    margin-left: 10px;
+                    span{
+                        margin-right: 3px;
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+                }
+                .or{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 12px;
+                    margin: 0 20px;
+                    margin-top: 25px;
+                }
+                .or::before,.or::after{
+                    content: "";
+                   height: 2px;
+                    color: wheat;
+                    background-color: black;
+                    
+                }
+              
+
+                .title{
+                    // background-color: red;
+                    padding: 20px;
+                    margin-left: 10px;
+                    align-items: center;
+                    display: flex;
+                    font-weight: bold;
+                    font-size: 25px;
+                    
+                    .logicon{
+                        margin-right: 10px;
+                    }
+
+                }
+                p{
+                    padding:0 20px;
+                }
+                .google{
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 10px 0;
+
+                   
+                    button{
+                        padding: 10px;
+                        width: 90%;
+                        border-radius: 10px;
+                        border: none;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                        display: flex;
+                        font-size: 12px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: rgb(226, 222, 222);
+                        }
+
+                        .gicon{
+                            margin-right: 5px;
+                            font-size: 19px;
+                            color: red;
+                        }
+
+                    }
+
+
+                }
+
+                .form{
+                    margin:10px 0;
+                    width: 100%;
+                    height:1.5*100%;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    // background-color: yellow;
+                    
+                    button{
+                        margin-bottom: 10px;
+                        width: 90%;
+                       padding: 12px 0;
+                       border-radius: 7px;
+                       border: none;
+                       font-size: 15px;
+                       font-weight: bold;
+                       background-color: rgb(92, 92, 222);
+                       color: white;
+                       cursor: pointer;
+                       
+                       &:hover{
+                        background-color: rgb(63, 63, 239);
+                       }
+                        
+                    }
+                    .notregister{
+                        align-self: flex-start;
+                        margin-left: 25px;
+                        font-size: 15px;
+                        margin-top: 3px;
+                        .signup{
+                            cursor: pointer;
+                            color: blue;
+                        }
+                    }
+
+                    .input{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        width: 90%;
+                        justify-content: center;
+                       
+                        
+                       span{
+                        margin-bottom: 2px;
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: rgb(72, 71, 71);
+                        // font-family: "poppins";
+                       }
+                     .in{
+                        padding: 10px;
+                        font-size: 14px;
+                     }
+                     
+                    }
+
+                }
+            }
+
+
+
+        }
+
+        .right{
+            background-color: aqua;
+            width: 100%;
+            flex: 1.5;
+            position: relative;
+
+            .rimage{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                background-image:linear-gradient(to top,transparent 10%,rgb(0,0,0,0.3)50%);
+            }
+
+            h2{
+               position: absolute;
+               top: 35vh;
+               width: 100%;
+            //    background-color: aqua;
+               text-align: center;
+               font-weight: bold;
+               font-size: 40px;
+               color: wheat;
+               span{
+                color: rgb(7, 151, 7);
+               }
+            }
+        }
+    }
+
+
+    @media only screen and (max-width: 1200px) {
+        .right{
+            display: none;
+        }
+        .loginWrapper{
+            width: 95%;
+            overflow: hidden;
+        }
+      }
+
+}
